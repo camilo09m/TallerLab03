@@ -7,6 +7,7 @@ public class Camion {
 	private String codigCamion;
 	private String patente;
 	private EstadoCamion estadoCamion;
+	private boolean estado;
 
 
 	public Camion(Sucursal sucursal) {
@@ -42,4 +43,5 @@ public class Camion {
 	public void setEstado(boolean estado) {
 		this.estado = estado;
 	}
+
 }
