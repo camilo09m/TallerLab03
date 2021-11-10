@@ -1,4 +1,8 @@
 public enum EstadoCamion {
 	OUTOFSERVICE,
-	ONSERVICE
+	ONSERVICE;
+
+	EstadoCamion() {
+
+	}
 }
