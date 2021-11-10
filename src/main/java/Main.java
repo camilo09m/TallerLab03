@@ -25,6 +25,8 @@ public class Main {
             switch (opcion) {
                 case "1" -> {
 
+        EmpresaTranspor empresaT = new EmpresaTranspor("Transportes Ñanco-Pincheira", "Rudecindo Ortega 1484");
+        empresaT.agregarSucursal().agregarCamion();
 
                     break;
                 }
