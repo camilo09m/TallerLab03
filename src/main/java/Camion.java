@@ -6,6 +6,6 @@ public class Camion {
 	private Collection<Flete> Fletes;
 	private String codigCamion;
 	private String patente;
-	private boolean estado;
+	private EstadoCamion estadoCamion;
 
 }
