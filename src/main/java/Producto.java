@@ -23,7 +23,6 @@ public class Producto {
 	public Producto(String codigProd, String tipoProducto){
 		this.codigProd = codigProd;
 		this.tipoProducto = tipoProducto;
-		this.Pack = new Pack();
 
 	}
 }

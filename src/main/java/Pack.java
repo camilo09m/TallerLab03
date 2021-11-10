@@ -4,13 +4,13 @@ public class Pack {
 
 	private Flete Flete;
 	Collection<Producto> Productos;
-	public Pack(){
-		this.Flete = new Flete();
+	public Pack(Flete flete){
+		this.Flete = flete;
 	}
 
-	private void agregarProducto(String codigProd, String tipoProducto){
-		if (Productos.size()<20 && !existProduc(codigProd,tipoProducto)) {
-			Productos.add(new Producto(codigProd, tipoProducto));
+	private void agregarProducto(Producto producto){
+		if (Productos.size()<20 && !existProduc(producto)) {
+			Productos.add(producto);
 		}else if (Productos.size()==20){
 			System.out.println("Pack lleno, intente en otro Pack");
 		}else {
@@ -18,15 +18,15 @@ public class Pack {
 		}
 
 	}
-	private void eliminarProducto(String codigProd, String tipoProducto){
-		if (existProduc(codigProd,tipoProducto)){
-			Productos.remove(new Producto(codigProd,tipoProducto));
+	private void eliminarProducto(Producto producto){
+		if (existProduc(producto)){
+			Productos.remove(producto);
 		}else{
 			System.out.println("El producto no existe");
 		}
 	}
-	private boolean existProduc(String codigProd, String tipoProducto){
-		return Productos.contains(new Producto(codigProd,tipoProducto));
+	private boolean existProduc(Producto producto){
+		return Productos.contains(producto);
 	}
 
 }
